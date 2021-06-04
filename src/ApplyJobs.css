@@ -1,0 +1,25 @@
+.applyjobs__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apply__error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apply__error h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.apply__error p {
+    font-size: 1.5rem;
+}

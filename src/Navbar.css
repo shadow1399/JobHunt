@@ -1,0 +1,198 @@
+.navbar {
+    /* background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%); */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav__home {
+    border-bottom: 0.3rem solid white;
+    color: white;
+}
+
+.nav__about {
+    color: #7f7f80;
+}
+
+.nav__about:hover {
+    color: white;
+}
+
+.nav__nothome {
+    color: white;
+}
+
+.nav__nothome:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.nav__butt {
+    color: white;
+    border: 1px solid white;
+    margin-right: 1.5rem;
+}
+
+.nav__butt:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar__logo {
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    margin-top: 2rem;
+    width: 5rem;
+    /* padding-top: 2rem; */
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.navbar__loginContainer {
+    display: flex;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+}
+
+
+/* 
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+} */
+
+.navbar__icon {
+    display: none;
+}
+
+.navbar__menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.navbar__menu li {
+    margin-top: 2rem;
+    padding: 1rem;
+    /* color: #7f7f80; */
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+/* .navbar__menu li:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+} */
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: relative;
+    }
+    .navbar__loginContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar__menu a {
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 680px;
+        position: absolute;
+        top: 120px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+    .navbar__menu.active {
+        background-color: #6668f4;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .navbar ul li {
+        display: flex;
+        /* text-align: center; */
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        width: 85%;
+        color: white;
+        /* display: table; */
+    }
+    .navbar ul li:hover {
+        background-color: #7577fa;
+        border-radius: 0;
+        width: 100%;
+    }
+    .nav__butt {
+        color: white;
+        border: none;
+        margin-right: 1.5rem;
+    }
+    .navbar__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.8rem;
+        transform: translate(70%, 30%);
+    }
+    .navbar__icon {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        transform: translate(-100%, 60%);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    /* .navbar__signup {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #4ad9e4;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+    } */
+    /* .navbar__signup:hover {
+        background: white;
+        color: #6568F4;
+        transition: 250ms;
+    } */
+    .MuiButton-root {
+        display: none;
+    }
+}

@@ -1,0 +1,85 @@
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    padding: 1rem;
+}
+
+.contact__test {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.contact__location {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact__formhead {
+    background-color: #82b1ff;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    width: 82%;
+    margin-left: 10%;
+    margin-top: -8%;
+    opacity: 0.8;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+}
+
+.contact__formbut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__formbut button {
+    background-color: #82b1ff;
+    padding: 1rem 2rem;
+    color: white;
+    opacity: 0.8;
+    border: none;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+}
+
+.contact__formbut button:hover {
+    transform: translateY(-0.25em);
+    opacity: 0.9;
+}
+
+.contact__input {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .contact__formhead {
+        width: 82%;
+        margin-top: -12%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contact__formhead {
+        width: 82%;
+        margin-top: -6%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .contact__formhead {
+        width: 82%;
+        margin-top: -12%;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .contact__formhead {
+        width: 82%;
+        margin-top: -15%;
+    }
+}

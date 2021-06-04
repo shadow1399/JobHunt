@@ -1,0 +1,110 @@
+.homeScreen__banner {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    /* font-size: 3.5em;
+    font-weight: 700; */
+    line-height: 1.166em;
+    letter-spacing: .1rem;
+}
+
+.homeScreen__banner h1 {
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 1.16em;
+}
+
+.homeScreen__banner p {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.banner__button {
+    margin-left: 6.8rem;
+}
+
+.banner__button button {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: none;
+    color: white;
+    background-color: #82b1ff;
+    box-shadow: 0 5px 11px 0 #82b1ff, 0 4px 15px 0 rgb(0 0 0 / 15%);
+    /* opacity: 0.8; */
+    padding: 1.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    /* color: blue; */
+    letter-spacing: 0.1rem;
+}
+
+
+/* 
+.banner__button  {
+    background-color: darkblue;
+    color: white;
+} */
+
+.banner__button button:hover,
+.banner__button button:focus {
+    transform: translateY(-0.25em);
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .homeScreen__banner {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .homeScreen__banner {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    .homeScreen__banner h1 {
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.16em;
+    }
+    .homeScreen__banner p {
+        margin-left: 6rem;
+    }
+    .banner__button {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .homeScreen__banner {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    .homeScreen__banner h1 {
+        font-weight: 700;
+        font-size: 2.5em;
+        line-height: 1.16em;
+    }
+    .homeScreen__banner p {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .banner__button {
+        margin-left: 1rem;
+    }
+}

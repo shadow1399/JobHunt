@@ -1,0 +1,18 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 990px) {}
